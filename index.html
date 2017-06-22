@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script type="text/javascript">
+			! function(e) {
+				function t(a) {
+					if(i[a]) return i[a].exports;
+					var n = i[a] = {
+						exports: {},
+						id: a,
+						loaded: !1
+					};
+					return e[a].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports
+				}
+				var i = {};
+				return t.m = e, t.c = i, t.p = "", t(0)
+			}([function(e, t) {
+				"use strict";
+				Object.defineProperty(t, "__esModule", {
+					value: !0
+				});
+				var i = window;
+				t["default"] = i.flex = function(e, t) {
+					var a = e || 100,
+						n = t || 1,
+						r = i.document,
+						o = navigator.userAgent,
+						d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),
+						l = o.match(/U3\/((\d+|\.){5,})/i),
+						c = l && parseInt(l[1].split(".").join(""), 10) >= 80,
+						p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi),
+						s = i.devicePixelRatio || 1;
+					p || d && d[1] > 534 || c || (s = 1);
+					var u = 1 / s,
+						m = r.querySelector('meta[name="viewport"]');
+					m || (m = r.createElement("meta"), m.setAttribute("name", "viewport"), r.head.appendChild(m)), m.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=" + u + ",maximum-scale=" + u + ",minimum-scale=" + u), r.documentElement.style.fontSize = a / 2 * s * n + "px"
+				}, e.exports = t["default"]
+			}]);
+			flex(100, 1);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<!--<script src="js/rem.js"></script>-->
+		<script src="js/index.js"></script>
+		<link rel="stylesheet" href="css/lg.css" />
+		<link rel="stylesheet" href="css/md.css" media="(min-width: 992px) and (max-width: 1199px)" />
+		<link rel="stylesheet" href="css/sm.css" media="(min-width: 768px) and (max-width: 991px)" />
+		<link rel="stylesheet" href="css/xs.css" media="(max-width:767px)" />
+		<title>Gulp 中文网</title>
+	</head>
+
+	<body>
+		<!--the nav begin-->
+		<nav class="nav">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="javascript:;">Gulp 中文网</a>
+					<div class="btn"></div>
+				</div>
+				<div class="navbar" id='navbar'>
+					<ul class="ul">
+						<li>
+							<a href="javascript:;">首页</a>
+						</li>
+						<li>
+							<a href="javascript:;">中文文档</a>
+						</li>
+						<li>
+							<a href="javascript:;">入门指南</a>
+						</li>
+						<li>
+							<a href="javascript:;">API</a>
+						</li>
+						<li>
+							<a href="javascript:;">插件开发</a>
+						</li>
+						<li>
+							<a href="javascript:;">常见问题</a>
+						</li>
+						<li>
+							<a href="javascript:;">使用技巧</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+		<!--the nav end-->
+
+		<!--the header begin-->
+		<header>
+			<img src="1.png" />
+			<p>用自动化构建工具增强你的工作流程！</p>
+			<input type="button" value="开始使用" />
+		</header>
+		<!--the header end-->
+
+		<!--the section begin-->
+		<!--测试时测试 不添加额外的类-->
+		<section class="container">
+			<div class="sec">
+				<div class="intro">
+					<p>
+						易于使用
+					</p>
+					<p>通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。</p>
+				</div>
+				<div class="intro">
+					<p>
+						构建快速
+					</p>
+					<p>利用 Node.js 流的威力，你可以快速构建项目并减少频繁的 IO 操作。</p>
+				</div>
+			</div>
+			<div class="sec">
+				<div class="intro">
+					<p>插件高质</p>
+					<p>Gulp 严格的插件指南确保插件如你期望的那样简洁高质得工作。</p>
+				</div>
+				<div class="intro">
+					<p>易于学习</p>
+					<p>通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道。</p>
+				</div>
+			</div>
+
+		</section>
+		<!--the section end-->
+		<!--the footer begin-->
+		<footer>
+			<P>© Gulp 中文网 2015</P>
+			<P>
+				<a href="javascript:;">京ICP备11008151号</a> | 京公网安备11010802014853</P>
+		</footer>
+		<!--the footer end-->
+	</body>
+
+</html>

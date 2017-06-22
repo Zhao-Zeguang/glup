@@ -1,0 +1,33 @@
+.container {
+    width: calc(100% - 30px);
+}
+.navbar-header a{
+	margin-left: -15px;
+}
+.navbar-header {
+	width: 100%;
+}
+.navbar-header .btn{
+	display: block;
+}
+.container .navbar{
+	display: none;
+	height: 322px;
+    width: 100%;
+    border-top:1px solid #CA3131;
+    /*transition: 500ms height linear;*/
+}
+.container .navbar ul{
+	float: none;
+	flex-direction: column;
+}
+.container .navbar ul li{
+	padding: 0;
+}
+.navbar ul li a{
+    padding: 13px 0;
+}
+section .intro {
+	flex: 1 0 100%;
+	padding: 0 15px;
+}
